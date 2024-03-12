@@ -1,0 +1,36 @@
+{% extends "master.html" %}
+{% block title %}project
+{% endblock %}
+ {% block content %}
+<section id="aboutus">
+ <form action="" method="post" enctype="multipart/form-data">
+     {% csrf_token %}
+      
+        <h2><marquee>FILL YOUR DETAILS</marquee></h2>
+      
+        <label><h3>1. Name</h3></label>
+        <input type="text"placeholder="name" name="namee" required>
+
+        <label><h3>2. Address</h3></label>
+        <input type="text"placeholder="address" name="add" id="add" required>
+
+        <label><h3>3. Phone number</h3></label>
+        <input type="number"placeholder="phone" name="pho" id="pho" required>
+
+        <label><h3>3. Pin code</h3></label>
+        <input type="number"placeholder="pincode" name="pin" id="pin" required>
+
+        <label><h3>6.Email</h3></label>
+        <input type="text"placeholder="email" name="mail">
+
+        <label><h3>7.Remarks</h3></label>
+        <input type="text"placeholder="remarks" name="mark">
+       
+            <button type="submit">submit</button>
+</form>
+          <br><br>
+        <a href="mailto:ranuj6111@gmail.com?Subject=Hello">
+        <i class="fa fa-envelope"></i>&nbsp;&nbsp;<h3>my gmail id @gmail.com</h3>
+        </a>
+ </section>
+{% endblock %}

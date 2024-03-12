@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="record">
+    <center><h1> Visited customer </h1></center>
+    <a href="/aboutus">FILL MORE DATA</a>
+    {% for i in data %}
+    <div>
+        <h1>Name={{i.name}} Address= {{i.address}} </h1>
+        <h1>Phone={{i.phone}} Pincode={{i.pincode}}</h1>
+        <h1>Email={{i.email}}Remarks ={{i.remarks}}</h1><br>
+        <a href="/delete/{{i.id}}">delete</a>
+        <a href="/update/{{i.id}}">update</a>
+    </div>
+    {% endfor %}
+</section>
+</body>
+</html>

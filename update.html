@@ -1,0 +1,32 @@
+{% extends "master.html" %}
+{% block title %}project
+{% endblock %}
+ {% block content %}
+
+ <form action="" method="post" enctype="multipart/form-data">
+     {% csrf_token %}
+      
+        <h2><marquee>FILL YOUR DETAILS</marquee></h2>
+      
+        <lable><h3>1. Name</h3></lable>
+        <input type="text"placeholder="name" name="namee" required>
+
+        <lable><h3>2. Address</h3></lable>
+        <input type="text"placeholder="address" name="add" id="add" required>
+
+        <lable><h3>3. Phone number</h3></lable>
+        <input type="number"placeholder="phone" name="pho" id="pho" required>
+
+        <lable><h3>3. Pin code</h3></lable>
+        <input type="number"placeholder="pincode" name="pin" id="pin" required>
+
+        <label><h3>6.Email</h3></label>
+        <input type="text"placeholder="email" name="mail">
+
+        <label><h3>7.Remarks</h3></label>
+        <input type="text"placeholder="remarks" name="mark">
+       
+            <button type="submit">update</button>
+</form>
+       
+{% endblock %}

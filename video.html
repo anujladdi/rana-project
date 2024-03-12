@@ -1,0 +1,30 @@
+{% extends "master.html" %}
+{% block title %}project
+{% endblock %}
+ {% block content %}
+
+<section id="video"> 
+    <center><h1 style="background-color: rgb(0,80,137);"> Demo Video </h1></center>
+    <br>
+    <br>
+    <iframe width="700" height="700" src="https://www.youtube.com/embed/WRQGqJoQuiM" title="YouTube video player" frameborder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+<section>
+    <h2>2.MAHADEV SHIVRATRI 2023</h2>
+     <video width="820" height="540" controls>
+        <source src="/static/shiv.mp4" type="video/mp4">
+        a<source src="/static/shiv.mp4" type="video/ogg"> 
+         Your browser does not support the video tag. 
+     </video> 
+
+     <h2>3.MY VIDEO</h2>
+     <video width="820" height="540" controls>
+        <source src="/static/videosss.mp4" type="video/mp4">
+        <source src="/static/videosss.mp4" type="video/ogg"> 
+         Your browser does not support the video tag. 
+     </video> 
+      
+</section>
+
+
+{% endblock %}

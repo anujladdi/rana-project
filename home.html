@@ -1,0 +1,101 @@
+{% extends "master.html" %}
+{% load static %}
+{% block title %}project
+{% endblock %}
+ {% block content %}
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ <link rel ="stylesheet" href="{% static 'myfirst.css' %}">
+ <h1 style="background-color:rgb(38,166,154);"><marquee> WELCOME TO RANA ELECTRICAL WORKS</marquee></h1>
+ <body>
+
+   <div>
+       <div class="slideshow-container">
+       
+       <div class="mySlides fade">
+         <div class="numbertext">1 / 3</div>
+         <img src="/static/greatwhite.jpeg" height="450" width="450">
+         <div class="text"></div>
+       </div>
+       
+       <div class="mySlides fade">
+         <div class="numbertext">2 / 3</div>
+         <img src="https://media.istockphoto.com/id/511990814/photo/industrial-electric-panel-repair.jpg?s=1024x1024&w=is&k=20&c=mO7WZXofFKj5Pu3ONbyxpCjF62BzBtEp3BkytC2WBbY="height="450" width="450">
+         <div class="text"></div>
+       </div>
+       
+       <div class="mySlides fade">
+         <div class="numbertext">3 / 4</div>
+         <img src="https://media.istockphoto.com/id/1220113150/photo/electrician-testing-fuse-box.jpg?s=1024x1024&w=is&k=20&c=AXiF3Q9XC3oE7kPgardCrjOhEadLToj8seMi6XBmMug="height="450" width="450">
+         <div class="text"></div>
+       </div>
+          <div class="theory"> 
+           <h3>THE SMART HANDYMAN SERVICES</h3>
+           <h2>GOOD ELECTRIC SERVICES <br> WITH PERFECT REPAIR</h2>
+           <h1>Home & Office <br>Repair Soloution</h1>
+
+         </div>
+         
+       
+       <div style="text-align:center">
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+       </div>
+       
+       
+
+       <script>
+       let slideIndex = 0;
+       showSlides();
+       
+       function showSlides() {
+         let i;
+         let slides = document.getElementsByClassName("mySlides");
+         let dots = document.getElementsByClassName("dot");
+         for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+         }
+         slideIndex++;
+         if (slideIndex > slides.length) {slideIndex = 1}    
+         for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";  
+         dots[slideIndex-1].className += " active";
+         setTimeout(showSlides, 2000); // Change image every 2 seconds
+       }
+       </script>
+   </div>
+
+   <div class="explain">
+   <p><h3>An electrical store is a shop focused on selling different electrical supplies (cable, cable channels, electric sockets etc) and electrical devices (electric meters, junction boxes, fuse boxes etc).<br><br>Electronics is a subfield of electrical engineering, but it differs from it in that it focuses on using active devices such as transistors, diodes, and integrated circuits to control and amplify the flow of electric current and to convert it from one form to another, such as from alternating current (AC) to direct current (DC) or from analog to digital.</h3></p><br><br>
+   
+   <div class="servicemen">
+     
+     <div>
+      <p><h3>Welcome to my Electrical Hub, your go-to destination for all things related to electricity and electronics! Whether you're a curious learner, a DIY enthusiast, or a seasoned professional, our website offers a wealth of resources to satisfy your electrical cravings.</h3></p><br>
+     
+      <center><div class="abc">
+        <button onclick="document.getElementById('myImage').src='static/off_blub.jpg'">Turn on the light</button>
+
+        <img id="myImage" src="static/on_blub.png" style="width:150px">
+
+        <button  onclick="document.getElementById('myImage').src='static/on_blub.png'">Turn off the light</button>
+      
+      </div></center>
+    </div>
+    </div>
+     
+   <p><h3>The global electronics industry is one of the most flourishing and extremely diversified sectors. These businesses are easy to start and very lucrative, especially for people in the electronics business. Also, they require less startup capital compared to others.</h3></p>
+  
+
+   
+     <div class="rana">
+       <img src="static/electric.jpg" width="450px">
+       <img src="static/dj.jpg" width="450px">
+       <img src="static/light.jpg" width="450px">
+     </div>
+
+
+  {% endblock %}

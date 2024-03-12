@@ -1,0 +1,69 @@
+{% load static %}
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+   
+
+    <link rel="stylesheet" href="{% static 'myfirst.css' %}">
+
+    </head>
+    <body>
+    
+    <div class="topnav">
+      <!-- <a class="active" href=""></a> -->
+      <a href="/">Home</a>
+      <a href="/image">Images</a>
+      <a href="/video">Video</a>
+      <a href="/map">Location</a>
+      <a href="/certificate">Certificate</a>
+      <a href="/service">Services</a>
+      <a href="/about">Contact</a>
+      <a href="/signup">Sign Up</a>
+      <a href="/logout">Logout</a>
+
+      </div>
+      
+      
+
+    </div>
+    
+    <div style="padding-left:16px">
+
+    </div>
+    {% block content %}
+    {% endblock %}
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/anuj.rana.2910">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/anuj-rana-595685237">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://instagram.com/anuj_rana51?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="/">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="/aboutus">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+        <li class="menu__item"><a class="menu__link" href="/aboutus">Contact</a></li>
+  
+      </ul>
+      <p>All Rights Reserved</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+       
+</body>
+</html>
